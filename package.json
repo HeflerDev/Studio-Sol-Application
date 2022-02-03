@@ -1,0 +1,11 @@
+{
+  "name": "teste_studio_sol",
+  "version": "1.0.0",
+  "description": "Um aplicativo que se baseia em um jogo de adivinhação, onde o usuário deve escolher um número e esperar que o resultado seja o mesmo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HeflerDev",
+  "license": "MIT"
+}
