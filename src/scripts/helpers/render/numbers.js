@@ -3,17 +3,19 @@
  */
 const clearNum = () => {
   document.querySelectorAll('.led').forEach((item) => {
-    item.classList.remove('active').add('inactive');
+    item.classList.remove('active');
+    item.classList.add('inactive');
   });
 };
 
 const swapLedState = (selector) => {
-  document.querySelector(selector).classList.remove('inactive').add('active');
+  document.querySelector(`#${selector}`).classList.remove('inactive');
+  document.querySelector(`#${selector}`).classList.add('active');
 };
 
 const renderOne = (decimal) => {
-  swapLedState(`#top-right-${decimal}`);
-  swapLedState(`#bottom-right-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
 };
 
 const renderTwo = (decimal) => {
@@ -22,24 +24,120 @@ const renderTwo = (decimal) => {
   swapLedState(`middle-top-${decimal}`);
   swapLedState(`middle-bottom-${decimal}`);
   swapLedState(`bottom-left-${decimal}`);
-  swapLedState(`bottom-${decimal}`)
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderThree = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderFour = (decimal) => {
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+};
+
+const renderFive = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderSix = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-left-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderSeven = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+};
+
+const renderEight = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-left-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderNine = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`middle-top-${decimal}`);
+  swapLedState(`middle-bottom-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
+};
+
+const renderZero = (decimal) => {
+  swapLedState(`top-${decimal}`);
+  swapLedState(`top-left-${decimal}`);
+  swapLedState(`top-right-${decimal}`);
+  swapLedState(`bottom-left-${decimal}`);
+  swapLedState(`bottom-right-${decimal}`);
+  swapLedState(`bottom-${decimal}`);
 };
 
 /**
  *  Render a chosen number to the Led
- *  @param {number} x The number to be rendered
- *  @param {number} y The decimal house
+ *  @param {number} number The number to be rendered
+ *  @param {number} decimal The decimal house
  */
 const renderNumber = (number, decimal) => {
-  if (decimal !== 1
-    || decimal !== 10
-    || decimal !== 100) { return new Error('Invalid Value'); }
-
   clearNum();
 
   switch (number) {
     case 1:
       renderOne(decimal);
+      break;
+    case 2:
+      renderTwo(decimal);
+      break;
+    case 3:
+      renderThree(decimal);
+      break;
+    case 4:
+      renderFour(decimal);
+      break;
+    case 5:
+      renderFive(decimal);
+      break;
+    case 6:
+      renderSix(decimal);
+      break;
+    case 7:
+      renderSeven(decimal);
+      break;
+    case 8:
+      renderEight(decimal);
+      break;
+    case 9:
+      renderNine(decimal);
+      break;
+    case 0:
+      renderZero(decimal);
+      break;
     default:
       break;
   }

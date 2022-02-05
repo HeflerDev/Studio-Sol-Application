@@ -7,6 +7,8 @@ import InputForm from './components/InputForm.html'
 
 import './styles/main.css';
 
+import "./scripts/listeners"
+
 const main =(() => {
     appendToBody(Header)
     appendToBody(NumberContainer)
