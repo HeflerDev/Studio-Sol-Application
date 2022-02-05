@@ -1,4 +1,4 @@
-import appendToBody from './scripts/helpers/appendToBody' 
+import appendToBody from './scripts/helpers/render/appendToBody'
 
 // Como é permitido usar um bundler simulei componentização através do html-loader 
 import Header from './components/Header.html'
