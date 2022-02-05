@@ -8,7 +8,7 @@ window.onload = () => {
             e.preventDefault()
             requestNumber()
                 .then(() => {
-                    console.log(read('sortedNumber'))
+                    console.log(read('errorCode'))
                     renderNumber(read('sortedNumber'), 1)
                 })
         })

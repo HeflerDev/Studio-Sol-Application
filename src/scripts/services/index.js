@@ -5,8 +5,9 @@ import { stash } from "../store"
 export const requestNumber = () => {
     return (
         fetch('https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=9')
-        .then( res => res.json())
+        .then((res) => {
+            return res.ok ? res.json() : stash('errorCode', res.status)
+        })
         .then(data => stash('sortedNumber', data.value))
-        .catch(err => console.log(err))
     )
 }

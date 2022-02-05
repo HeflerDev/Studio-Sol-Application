@@ -1,4 +1,8 @@
 /**
+ * Handle the rendering of the numbers
+ */
+
+/**
  * Change state of all Led's to "Inactive"
  */
 const clearNum = () => {
@@ -8,11 +12,18 @@ const clearNum = () => {
   });
 };
 
+/**
+ * @param {string} selector The ID of the element
+ */
 const swapLedState = (selector) => {
   document.querySelector(`#${selector}`).classList.remove('inactive');
   document.querySelector(`#${selector}`).classList.add('active');
 };
 
+/**
+ * Render the number one on the screen
+ * @param {number} decimal Choose wich decimal house it will render
+ */
 const renderOne = (decimal) => {
   swapLedState(`top-right-${decimal}`);
   swapLedState(`bottom-right-${decimal}`);
@@ -100,7 +111,7 @@ const renderZero = (decimal) => {
 };
 
 /**
- *  Render a chosen number to the Led
+ *  Redirect the parameters to choose wich number will render
  *  @param {number} number The number to be rendered
  *  @param {number} decimal The decimal house
  */
