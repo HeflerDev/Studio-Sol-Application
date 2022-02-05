@@ -1,6 +1,49 @@
-@import "_header.css";
+@import "_variables.css";
 @import "_fonts.css";
+@import "_header.css";
+@import "_number-container.css";
+@import "_input-form.css";
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  width: 100%;
+  min-width: 200px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) {
+  main {
+    width: var(--breakpoint-sm);
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: var(--breakpoint-md);
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    width: var(--breakpoint-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: var(--breakpoint-xl);
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    width: var(--breakpoint-xxl);
+  }
 }

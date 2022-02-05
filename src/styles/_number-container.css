@@ -1,0 +1,89 @@
+@import "_variables.css";
+
+.number-section {
+  display: flex;
+  justify-content: center;
+}
+
+.number {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.inactive {
+  border-bottom-color: var(--color-secondary) !important;
+}
+
+.active {
+  border-bottom-color: var(--color-dark) !important;
+}
+
+.led {
+  position: absolute;
+  border-bottom: 11px solid ;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  width: 34px;
+}
+
+.bottom {
+  left:0;
+  bottom: 5%;
+  border-radius: 0 0 5px 5px;
+}
+
+.bottom-left {
+  left: -40%;
+  bottom: 42%;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  border-left: 5.5px solid transparent;
+  border-right: 11px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.bottom-right {
+  right: -40%; 
+  bottom: 42%;
+  transform: rotate(-90deg);
+  border-left: 11px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.middle-bottom {
+  transform: rotate(180deg);
+  border-bottom: solid 5.5px;
+}
+
+.top {
+  transform: rotate(180deg);
+  top: 5%;
+  border-radius: 0 0 5px 5px;
+}
+
+.top-left {
+  left: -40%;
+  bottom: 40%;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  border-left: 11px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.top-right {
+  transform: rotate(-90deg);
+  right: -40%; 
+  bottom: 40%;
+  transform: rotate(-90deg);
+  border-left: 5.5px solid transparent;
+  border-right: 11px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.middle-top {
+  bottom: 0;
+  border-bottom: solid 5.5px;
+}
