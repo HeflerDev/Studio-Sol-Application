@@ -116,9 +116,8 @@ const renderZero = (decimal) => {
  *  @param {number} decimal The number of decimal houses
  */
 const renderNumber = (number, decimal) => {
-
-    if (decimal === 2) { document.querySelector('#second-number').classList.remove('hidden') }
-    if (decimal === 3) { document.querySelector('#third-number').classList.remove('hidden') }
+  if (decimal === 2) { document.querySelector('#second-number').classList.remove('hidden'); }
+  if (decimal === 3) { document.querySelector('#third-number').classList.remove('hidden'); }
 
   switch (number) {
     case 1:

@@ -9,7 +9,7 @@ import { renderGuessResult } from '../helpers/render/guess';
  * Display the input number on the screen
  */
 const displayNumber = () => {
-      clearNum();
+  clearNum();
   document.querySelector('#third-number').classList.add('hidden');
   document.querySelector('#second-number').classList.add('hidden');
   const input = document.querySelector('#input-send').value;
@@ -22,15 +22,16 @@ const displayNumber = () => {
 window.onload = () => {
   document.querySelector('#guess-form')
     .addEventListener('submit', (e) => {
+      console.log(read('sortedNumber'));
       e.preventDefault();
       const input = document.querySelector('#input-send').value;
       const errors = validateNumberInput(input);
-        if (errors) { 
-            return formErrors(errors)
-        }
-        displayNumber()
-        renderGuessResult(read('sortedNumber'), input)
-        
+      if (errors) {
+        return formErrors(errors);
+      }
+      document.querySelector('.errors-container').classList.add('hidden');
+      displayNumber();
+      renderGuessResult(read('sortedNumber'), input);
     });
 
   /**
@@ -39,5 +40,10 @@ window.onload = () => {
   document.querySelector('#input-send')
     .addEventListener('input', ({ target }) => {
       target.value = target.value.match(/[0-9]{1,3}/);
+    });
+
+  document.querySelector('#new-game-button')
+    .addEventListener('click', () => {
+      console.log('Working');
     });
 };

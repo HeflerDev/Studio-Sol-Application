@@ -7,13 +7,25 @@ form {
 }
 
 #input-send {
-  border: solid var(--color-primary) 1px;
+  border:solid #CFCFCF 1px !important;
   height: 100%;
   padding: 0;
   margin: 0;
   border-radius: 5px;
   width: 80%;
   padding: 0 10px;
+}
+
+#input-send:focus {
+  border: solid var(--color-primary) 1px !important;
+  outline: none;
+}
+
+#input-send:disabled {
+  background-color: #F5F5F5;
+  border:solid #CFCFCF 1px !important;
+  color: #9E9E9E;
+  cursor:not-allowed;
 }
 
 #submit-btn {
@@ -23,4 +35,11 @@ form {
   font-weight: 900;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-btn:disabled {
+  background: none;
+  background-color: #DDDDDD;
+  cursor:not-allowed;
 }

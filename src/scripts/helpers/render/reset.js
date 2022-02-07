@@ -7,5 +7,3 @@ export const clearNum = () => {
     item.classList.add('inactive');
   });
 };
-
-

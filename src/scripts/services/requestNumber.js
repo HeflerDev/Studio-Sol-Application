@@ -1,4 +1,3 @@
-
 import { stash } from '../store';
 /**
  * Communicate with the api

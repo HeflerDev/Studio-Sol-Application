@@ -53,7 +53,7 @@ section {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .inactive {
@@ -78,6 +78,11 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
+.victory {
+  border-bottom-color: #32BF00 !important;
+  color: #32bf00 !important;
+}
+
 .bottom-left {
   left: -40%;
   bottom: 42%;
@@ -95,6 +100,34 @@ section {
   border-left: 11px solid transparent;
   border-right: 5.5px solid transparent;
   border-radius: 0 0 5px 5px;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  display:flex;
+  justify-content: center;
+}
+
+.button-container button {
+  width: 130px;
+  background: var(--color-gradient-dark);
+  height: 42px;
+  font-weight: bold;
+  color: var(--color-light);
+  display: flex;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-container button svg {
+  margin: auto 2px;
+}
+
+.button-container button div {
+  margin: auto 2px;
 }
 
 .middle-bottom {

@@ -5,6 +5,7 @@
   --color-light: #fff;
   --color-gradient: linear-gradient(0deg, #c0661c 0%, #ef6c00 100%);
   --color-background-gradient: linear-gradient(0deg, #FFF 0%, #EEE 100%);
+  --color-gradient-dark: linear-gradient(0deg, #9E9E9E 0%, #434854 100%);
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1000px;
