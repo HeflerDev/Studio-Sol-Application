@@ -113,10 +113,12 @@ const renderZero = (decimal) => {
 /**
  *  Redirect the parameters to choose wich number will render
  *  @param {number} number The number to be rendered
- *  @param {number} decimal The decimal house
+ *  @param {number} decimal The number of decimal houses
  */
 const renderNumber = (number, decimal) => {
-  clearNum();
+
+    if (decimal === 2) { document.querySelector('#second-number').classList.remove('hidden') }
+    if (decimal === 3) { document.querySelector('#third-number').classList.remove('hidden') }
 
   switch (number) {
     case 1:

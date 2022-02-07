@@ -1,0 +1,1 @@
+export { validateNumberInput } from './validate';

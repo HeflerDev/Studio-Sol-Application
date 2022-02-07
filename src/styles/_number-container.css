@@ -1,14 +1,59 @@
 @import "_variables.css";
 
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.errors-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  color: red;
+  text-align: center;
+}
+
+.number-page {
+  position: relative;
+}
+
+.d-abs {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.top-30 {
+
+  top: -25%;
+}
+
+.top-80 {
+
+  top: -75%;
+}
+
+#guess-container {
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 900;
+}
+
 .number-section {
   display: flex;
   justify-content: center;
+  margin: 0 0.5rem;
 }
 
 .number {
   width: 56px;
   height: 56px;
   position: relative;
+}
+
+.hidden {
+  display: none;
 }
 
 .inactive {

@@ -8,8 +8,10 @@ import InputForm from './components/InputForm.html'
 import './styles/main.css';
 
 import "./scripts/listeners"
+import { requestNumber } from './scripts/services';
 
 const main =(() => {
+    requestNumber();
     appendToBody(Header)
     appendToBody(NumberContainer)
     appendToBody(InputForm)
