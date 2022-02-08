@@ -1,4 +1,4 @@
-import { clearNum } from './reset'
+import { clearNum } from './reset';
 /**
  * Handle the rendering of the numbers
  */

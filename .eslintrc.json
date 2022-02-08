@@ -11,5 +11,9 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/prefer-default-export": "off",
+        "consistent-return": "off",
+        "no-return-assign":"off",
+        "no-param-reassign":"off"
     }
 }

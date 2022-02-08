@@ -12,10 +12,8 @@ import { requestNumber } from './scripts/services';
 
 import refreshIcon from './assets/icons/refreshIcon';
 
-const main = (() => {
-  requestNumber();
-  appendToBody(Header);
-  appendToBody(NumberContainer);
-  appendToBody(InputForm);
-  document.querySelector('#new-game-button').innerHTML = `${refreshIcon()}<div>Nova Partida</div>`;
-})();
+requestNumber();
+appendToBody(Header);
+appendToBody(NumberContainer);
+appendToBody(InputForm);
+document.querySelector('#new-game-button').innerHTML = `${refreshIcon()}<div>Nova Partida</div>`;

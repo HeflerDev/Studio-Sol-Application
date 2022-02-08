@@ -1,5 +1,5 @@
 import { clearNum } from './reset';
-import { read, readStash } from '../../store' 
+import { read } from '../../store';
 import { displayNumber } from './numbers';
 
 export const renderVictory = () => {
@@ -16,22 +16,21 @@ export const renderReset = () => {
 };
 
 export const renderCrash = (elem) => {
-  clearNum()
-  displayNumber(read("errorCode").toString())
-  elem.innerHTML = "ERRO"
+  clearNum();
+  displayNumber(read('errorCode').toString());
+  elem.innerHTML = 'ERRO';
   document.querySelectorAll('.active').forEach((item) => {
     item.classList.add('crash-report');
   });
   document.querySelector('#guess-container').classList.add('crash-report');
-  renderReset()
+  renderReset();
 };
 
 export const renderGuessResult = (sortedNumber, input) => {
   const elem = document.querySelector('#guess-container');
   elem.classList.remove('hidden');
 
-  console.log(readStash())
-  if (read("errorCode") || !read("sortedNumber") ) return renderCrash(elem);
+  if (read('errorCode') || !read('sortedNumber')) return renderCrash(elem);
 
   if (input > sortedNumber) {
     elem.innerHTML = 'É menor';
