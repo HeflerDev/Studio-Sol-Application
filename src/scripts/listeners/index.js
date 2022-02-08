@@ -10,7 +10,7 @@ window.onload = () => {
     .addEventListener('submit', (e) => {
       console.log(read('sortedNumber'));
       e.preventDefault();
-      const input = document.querySelector('#input-send').value;
+      const input = parseInt(document.querySelector('#input-send').value, 10).toString();
       const errors = validateNumberInput(input);
       if (errors) {
         return formErrors(errors);
