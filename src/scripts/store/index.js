@@ -9,3 +9,5 @@ export const stash = (key, value) => {
 };
 
 export const read = (key) => store[key];
+
+export const readStash = () => store

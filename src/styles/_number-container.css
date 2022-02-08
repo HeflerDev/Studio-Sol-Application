@@ -26,18 +26,18 @@ section {
 
 .top-30 {
 
-  top: -25%;
+  top: -50%;
 }
 
 .top-80 {
 
-  top: -75%;
+  top: -100%;
 }
 
 #guess-container {
   text-align: center;
   color: var(--color-primary);
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .number-section {
@@ -81,6 +81,11 @@ section {
 .victory {
   border-bottom-color: #32BF00 !important;
   color: #32bf00 !important;
+}
+
+.crash-report {
+  border-bottom-color: #CC3300 !important;
+  color: #CC3300 !important;
 }
 
 .bottom-left {

@@ -1,16 +1,7 @@
+import { clearNum } from './reset'
 /**
  * Handle the rendering of the numbers
  */
-
-/**
- * Change state of all Led's to "Inactive"
- */
-const clearNum = () => {
-  document.querySelectorAll('.led').forEach((item) => {
-    item.classList.remove('active');
-    item.classList.add('inactive');
-  });
-};
 
 /**
  * @param {string} selector The ID of the element
@@ -115,7 +106,7 @@ const renderZero = (decimal) => {
  *  @param {number} number The number to be rendered
  *  @param {number} decimal The number of decimal houses
  */
-const renderNumber = (number, decimal) => {
+export const renderNumber = (number, decimal) => {
   if (decimal === 2) { document.querySelector('#second-number').classList.remove('hidden'); }
   if (decimal === 3) { document.querySelector('#third-number').classList.remove('hidden'); }
 
@@ -155,4 +146,15 @@ const renderNumber = (number, decimal) => {
   }
 };
 
-export default renderNumber;
+/**
+ * Display the input number on the screen
+ */
+export const displayNumber = (input) => {
+  clearNum();
+  document.querySelector('#third-number').classList.add('hidden');
+  document.querySelector('#second-number').classList.add('hidden');
+  if (input.length === 1) return renderNumber(parseInt(input, 10), 1);
+  input.split('').forEach((item, index) => {
+    renderNumber(parseInt(item, 10), index + 1);
+  });
+};

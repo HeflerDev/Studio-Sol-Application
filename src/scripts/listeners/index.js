@@ -1,23 +1,9 @@
-import renderNumber from '../helpers/render/numbers';
+import { displayNumber } from '../helpers/render/numbers';
 import { read } from '../store';
-import { clearNum } from '../helpers/render/reset';
 import { validateNumberInput } from '../helpers/data/validate';
 import { formErrors } from '../helpers/render/formErrors';
 import { renderGuessResult } from '../helpers/render/guess';
-
-/**
- * Display the input number on the screen
- */
-const displayNumber = () => {
-  clearNum();
-  document.querySelector('#third-number').classList.add('hidden');
-  document.querySelector('#second-number').classList.add('hidden');
-  const input = document.querySelector('#input-send').value;
-  if (input.length === 1) return renderNumber(parseInt(input), 1);
-  input.split('').forEach((item, index) => {
-    renderNumber(parseInt(item), index + 1);
-  });
-};
+import { resetGame } from '../helpers/render/reset'
 
 window.onload = () => {
   document.querySelector('#guess-form')
@@ -29,9 +15,11 @@ window.onload = () => {
       if (errors) {
         return formErrors(errors);
       }
+
       document.querySelector('.errors-container').classList.add('hidden');
-      displayNumber();
+      displayNumber(input);
       renderGuessResult(read('sortedNumber'), input);
+      return 0;
     });
 
   /**
@@ -44,6 +32,6 @@ window.onload = () => {
 
   document.querySelector('#new-game-button')
     .addEventListener('click', () => {
-      console.log('Working');
+      resetGame()
     });
 };
