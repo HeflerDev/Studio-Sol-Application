@@ -1,6 +1,6 @@
 /**
  * Display Errors in the screen
- * @param { Array } errors - An array of strings
+ * @param { Array } errors : An array of strings
  */
 export const formErrors = (errors) => {
   document.querySelector('#input-send').value = '';

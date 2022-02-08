@@ -1,10 +1,10 @@
-import appendToBody from './scripts/helpers/render/appendToBody';
+import { appendToBody } from './scripts/helpers/render/appendToBody';
 
-// Como é permitido usar um bundler simulei componentização através do html-loader
+// Containers processed with html-loader
 import Header from './components/Header.html';
 import NumberContainer from './components/NumberContainer.html';
 import InputForm from './components/InputForm.html';
-
+// Containers processed with css-loader
 import './styles/main.css';
 
 import './scripts/listeners';
