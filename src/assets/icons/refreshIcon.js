@@ -1,3 +1,9 @@
+/**
+ * The Refresh Icon.
+ * Wrote like a function to be easier to handle and use in any context.
+ * @param {number} size : The size of the icon in square shape.
+ * @param {string} color : The color of the full icon.
+ */
 const refreshIcon = (
   size = 24,
   color = 'white',

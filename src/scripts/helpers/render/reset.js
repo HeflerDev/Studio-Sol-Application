@@ -11,6 +11,11 @@ export const clearNum = () => {
   });
 };
 
+/**
+ * When triggered, resets the entire game to it's initial state.
+ * It would be easier a window.reload(), but since this is not the objective of the challenge,
+ * I think this solution suits better.
+ */
 export const resetGame = () => {
   stash('errorCode', null);
   document.querySelectorAll('.led').forEach((item) => {

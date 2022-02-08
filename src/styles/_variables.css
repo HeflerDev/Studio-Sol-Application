@@ -1,3 +1,7 @@
+/*
+ * This file store all patterns used in the app.
+ * Some, even if not used, are here for escalation purposes.
+ */
 :root {
   --color-primary: #ff6600;
   --color-secondary: #ddd;

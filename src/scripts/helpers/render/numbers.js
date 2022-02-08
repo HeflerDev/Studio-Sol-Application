@@ -142,12 +142,13 @@ export const renderNumber = (number, decimal) => {
       renderZero(decimal);
       break;
     default:
-      break;
+      return new Error('Internal ERROR: Invalid character.');
   }
 };
 
 /**
  * Display the input number on the screen
+ * @param {string} input : The string containing only numbers.
  */
 export const displayNumber = (input) => {
   clearNum();
