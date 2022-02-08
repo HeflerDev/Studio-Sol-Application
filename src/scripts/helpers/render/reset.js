@@ -22,6 +22,7 @@ export const resetGame = () => {
   document.querySelector("#guess-container").classList.add('hidden')
   document.querySelector("#guess-container").classList.remove("victory")
   document.querySelector("#guess-container").classList.remove("crash-report")
+      document.querySelector("#input-send").value = ""
   requestNumber()
 
 }

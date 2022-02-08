@@ -19,6 +19,7 @@ window.onload = () => {
       document.querySelector('.errors-container').classList.add('hidden');
       displayNumber(input);
       renderGuessResult(read('sortedNumber'), input);
+      document.querySelector("#input-send").value = ""
       return 0;
     });
 
