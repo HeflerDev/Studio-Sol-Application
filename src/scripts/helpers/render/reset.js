@@ -1,4 +1,5 @@
 import { requestNumber } from "../../services";
+import { stash } from "../../store";
 
 /**
  * Change state of all Led's to "Inactive"
@@ -11,11 +12,14 @@ export const clearNum = () => {
 };
 
 export const resetGame = () => {
+  stash("errorCode", null)
   document.querySelectorAll('.led').forEach(item => {
     item.classList.remove("victory")
     item.classList.remove("crash-report")
   })
   clearNum()
+  document.querySelector("#second-number").classList.add("hidden")
+  document.querySelector("#third-number").classList.add("hidden")
   document.querySelector("#input-send").disabled = false;
   document.querySelector("#submit-btn").disabled = false;
   document.querySelector(".button-container").classList.add("hidden")
