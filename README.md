@@ -3,6 +3,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+![Build](https://img.shields.io/github/workflow/status/heflerdev/studio-sol-application/Lint?style=for-the-badge)
 
 <br />
 <div align="center">
@@ -15,11 +16,9 @@
   <p align="center">
     A small game that generates a number and you have to guess it.
     <br />
-    <a href="#"><strong>Explore the docs »</strong></a>
+    <a href="https://studio-sol-heflerdev.netlify.app/"><strong>View Demo »</strong></a>
     <br />
     <br />
-    <a href="#">View Demo</a>
-    ·
     <a href="https://github.com/HeflerDev/Studio-Sol-Application/issues">Report Bug</a>
     ·
     <a href="https://github.com/HeflerDev/Studio-Sol-Application/issues">Request Feature</a>
@@ -65,6 +64,7 @@ This project is a step of an application process to work at "Studio Sol", wich c
 * CSS
 * JavaScript
 * [Webpack](https://webpack.js.org/)
+* [Jest](https://jestjs.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -131,6 +131,9 @@ Usually I don't think this section is necessary on README, but since I'm being e
 - [x] Should render new game button when:
   - [x] An ERROR occurs.
   - [x] The player finishes the game (guess right).
+- [x] Optional
+  - [x] Use Bundler
+  - [x] Unit testing
 
 See the [open issues](https://github.com/HeflerDev/Studio-Sol-Application/issues) for a full list of proposed features (and known issues).
 
