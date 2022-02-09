@@ -1,9 +1,12 @@
+/* stylelint-disable property-no-vendor-prefix */
+
 h1 {
   background: var(--color-gradient);
   font-size: 24px;
   margin: auto;
   text-align: center;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -13,3 +16,5 @@ h1 {
   width: 205px;
   margin: 10px auto;
 }
+
+/* stylelint-enable property-no-vendor-prefix */
