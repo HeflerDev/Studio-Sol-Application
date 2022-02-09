@@ -6,15 +6,17 @@ const store = {};
 
 /**
  * Stash a value into the store object.
- * @param { string } key : The Object key label
- * @param { any } value : The value linked to the key label.
+ * @param { String } key : The Object key label
+ * @param { Any } value : The value linked to the key label.
+ * @return { Object } : Object with the key and value
  */
-export const stash = (key, value) => {
+export const stash = (key, value) =>  {
   store[key] = value;
-};
-
+  return store;
+}
 /**
  * Retrieve the value of a key label.
- * @param { string } : The key label name.
+ * @param { String } : The key label name.
+ * @return { Object } : The value corresponding the key
  */
 export const read = (key) => store[key];

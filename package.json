@@ -4,13 +4,14 @@
   "description": "Um aplicativo que se baseia em um jogo de adivinhação, onde o usuário deve escolher um número e esperar que o resultado seja o mesmo.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "npx webpack serve",
     "build": "npx webpack --mode production"
   },
   "author": "HeflerDev",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "css-loader": "^6.6.0",
     "eslint": "^8.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -20,12 +21,15 @@
     "eslint-plugin-promise": "^5.2.0",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
+    "jest": "^27.5.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
     "html-webpack-plugin": "^5.5.0"
   }
 }

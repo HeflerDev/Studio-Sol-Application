@@ -1,6 +1,7 @@
 /**
  * If false, return. Else, return a list of errors
- * @param {integer} input The input received
+ * @param { Integer } input The input received
+ * @return { Array | Boolean } : An array of errors or a boolean
  */
 export const validateNumberInput = (input) => {
   const errors = [];

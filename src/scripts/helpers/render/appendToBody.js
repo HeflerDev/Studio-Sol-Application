@@ -7,5 +7,5 @@ export const appendToBody = (value) => {
   if (elem) {
     return elem.innerHTML += value;
   }
-  document.querySelector('body').innerHTML = `<main>${value}</main>`;
+  return document.querySelector('body').innerHTML = `<main>${value}</main>`;
 };
