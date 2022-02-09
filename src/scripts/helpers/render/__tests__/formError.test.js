@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { formErrors } from '..';
 
 describe('when rendering errors', () => {
@@ -20,3 +22,5 @@ describe('when rendering errors', () => {
     expect(/\<p\>Error One\<\/p\>\<p\>Error Two\<\/p\>/.test(document.body.innerHTML)).toBe(true);
   });
 });
+
+/* eslint-enable */

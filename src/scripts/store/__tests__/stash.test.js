@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { stash, read } from '..';
 
 describe('when manipulating the store', () => {
@@ -23,3 +25,5 @@ describe('when manipulating the store', () => {
     }
   });
 });
+
+/* eslint-enable */

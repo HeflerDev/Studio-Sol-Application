@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { validateNumberInput } from '..';
 
 describe('When validating', () => {
@@ -37,3 +39,5 @@ describe('When validating', () => {
     });
   });
 });
+
+/* eslint-disable */

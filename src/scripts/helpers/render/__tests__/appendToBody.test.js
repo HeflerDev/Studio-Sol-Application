@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { appendToBody } from '..';
 
 /**
@@ -9,3 +11,5 @@ describe('when rendering the page', () => {
     expect(appendToBody('<p>Lorem Ipsum</p>')).toBe('<main><p>Lorem Ipsum</p></main>');
   });
 });
+
+/* eslint-enable */

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644438201048" clover="3.2.0">
-  <project timestamp="1644438201048" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="7" coveredelements="7" complexity="0" loc="5" ncloc="5" packages="3" files="4" classes="4"/>
+<coverage generated="1644441563021" clover="3.2.0">
+  <project timestamp="1644441563021" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="3" files="3" classes="3"/>
     <package name="helpers.data">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/home/hefler/Workspace/studio_sol/src/scripts/helpers/data/index.js">
@@ -15,17 +15,9 @@
       </file>
     </package>
     <package name="store">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/home/hefler/Workspace/studio_sol/src/scripts/store/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-      <file name="stash.js" path="/home/hefler/Workspace/studio_sol/src/scripts/store/stash.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
       </file>
     </package>
   </project>
