@@ -64,26 +64,26 @@ section {
 
 .led {
   position: absolute;
-  border-bottom: 11px solid ;
+  border-bottom: 11px solid;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   width: 34px;
 }
 
 .bottom {
-  left:0;
+  left: 0;
   bottom: 5%;
   border-radius: 0 0 5px 5px;
 }
 
 .victory {
-  border-bottom-color: #32BF00 !important;
+  border-bottom-color: #32bf00 !important;
   color: #32bf00 !important;
 }
 
 .crash-report {
-  border-bottom-color: #CC3300 !important;
-  color: #CC3300 !important;
+  border-bottom-color: #c30 !important;
+  color: #c30 !important;
 }
 
 .bottom-left {
@@ -97,7 +97,7 @@ section {
 }
 
 .bottom-right {
-  right: -40%; 
+  right: -40%;
   bottom: 42%;
   transform: rotate(-90deg);
   border-left: 11px solid transparent;
@@ -109,7 +109,7 @@ section {
   position: absolute;
   width: 100%;
   bottom: -100%;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -155,8 +155,7 @@ section {
 }
 
 .top-right {
-  transform: rotate(-90deg);
-  right: -40%; 
+  right: -40%;
   bottom: 40%;
   transform: rotate(-90deg);
   border-left: 5.5px solid transparent;

@@ -1,5 +1,4 @@
-import { formErrors } from '..'
-
+import { formErrors } from '..';
 
 describe('when rendering errors', () => {
   beforeEach(() => {
@@ -11,14 +10,13 @@ describe('when rendering errors', () => {
         </label>
         <input type="submit" value="ENVIAR" id="submit-btn">
       </form>
-    `
-  })
+    `;
+  });
 
-  const errors =['Error One', 'Error Two']
+  const errors = ['Error One', 'Error Two'];
 
-  test("it displays accordingly", () => {
-    formErrors(errors)
-    expect(/\<p\>Error One\<\/p\>\<p\>Error Two\<\/p\>/.test(document.body.innerHTML)).toBe(true)
-  })
-
-})
+  test('it displays accordingly', () => {
+    formErrors(errors);
+    expect(/\<p\>Error One\<\/p\>\<p\>Error Two\<\/p\>/.test(document.body.innerHTML)).toBe(true);
+  });
+});

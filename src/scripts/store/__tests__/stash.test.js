@@ -1,25 +1,25 @@
-import { stash, read } from "..";
+import { stash, read } from '..';
 
-describe("when manipulating the store", () => {
-  test("stashes correctly", () => {
-    const stashTest = stash('key', 'value')
-    expect(typeof stashTest).toBe("object");
-  })
-  test("read multiple type of values after is stashed", () => {
+describe('when manipulating the store', () => {
+  test('stashes correctly', () => {
+    const stashTest = stash('key', 'value');
+    expect(typeof stashTest).toBe('object');
+  });
+  test('read multiple type of values after is stashed', () => {
     const stashValues = [
       'string',
       123,
       ['value', 123],
       {
-        otherKey: 'othervalue'
+        otherKey: 'othervalue',
       },
-      false
-    ]
+      false,
+    ];
 
-    for (let val of stashValues) {
-      stash ('key', val)
-      const readTest = read("key");
-      expect(readTest).toBe(val)
+    for (const val of stashValues) {
+      stash('key', val);
+      const readTest = read('key');
+      expect(readTest).toBe(val);
     }
-  })
-})
+  });
+});

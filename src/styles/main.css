@@ -5,7 +5,7 @@
 @import "_input-form.css";
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   background: var(--color-background-gradient);
   z-index: -1;
   min-height: 100vh;

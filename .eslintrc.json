@@ -13,6 +13,7 @@
     "rules": {
         "import/prefer-default-export": "off",
         "no-return-assign":"off",
-        "no-param-reassign":"off"
+        "no-param-reassign":"off",
+        "consistent-return":"off"
     }
 }

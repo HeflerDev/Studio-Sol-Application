@@ -1,9 +1,8 @@
 h1 {
-  background: var(--color-gradient) ;
+  background: var(--color-gradient);
   font-size: 24px;
   margin: auto;
   text-align: center;
-  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
