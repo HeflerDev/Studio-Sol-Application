@@ -1,0 +1,169 @@
+@import "_variables.css";
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.errors-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  color: red;
+  text-align: center;
+}
+
+.number-page {
+  position: relative;
+}
+
+.d-abs {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.top-30 {
+  top: -50%;
+}
+
+.top-80 {
+  top: -100%;
+}
+
+#guess-container {
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.number-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+
+.number {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.inactive {
+  border-bottom-color: var(--color-secondary) !important;
+}
+
+.active {
+  border-bottom-color: var(--color-dark) !important;
+}
+
+.led {
+  position: absolute;
+  border-bottom: 11px solid;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  width: 34px;
+}
+
+.bottom {
+  left: 0;
+  bottom: 5%;
+  border-radius: 0 0 5px 5px;
+}
+
+.victory {
+  border-bottom-color: #32bf00 !important;
+  color: #32bf00 !important;
+}
+
+.crash-report {
+  border-bottom-color: #c30 !important;
+  color: #c30 !important;
+}
+
+.bottom-left {
+  left: -40%;
+  bottom: 42%;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  border-left: 5.5px solid transparent;
+  border-right: 11px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.bottom-right {
+  right: -40%;
+  bottom: 42%;
+  transform: rotate(-90deg);
+  border-left: 11px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.button-container {
+  position: absolute;
+  width: 100%;
+  bottom: -100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  width: 130px;
+  background: var(--color-gradient-dark);
+  height: 42px;
+  font-weight: bold;
+  color: var(--color-light);
+  display: flex;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.button-container button svg {
+  margin: auto 2px;
+}
+
+.button-container button div {
+  margin: auto 2px;
+}
+
+.middle-bottom {
+  transform: rotate(180deg);
+  border-bottom: solid 5.5px;
+}
+
+.top {
+  transform: rotate(180deg);
+  top: 5%;
+  border-radius: 0 0 5px 5px;
+}
+
+.top-left {
+  left: -40%;
+  bottom: 40%;
+  transform: rotate(90deg);
+  margin: 0 auto;
+  border-left: 11px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.top-right {
+  right: -40%;
+  bottom: 40%;
+  transform: rotate(-90deg);
+  border-left: 5.5px solid transparent;
+  border-right: 11px solid transparent;
+  border-radius: 0 0 5px 5px;
+}
+
+.middle-top {
+  bottom: 0;
+  border-bottom: solid 5.5px;
+}

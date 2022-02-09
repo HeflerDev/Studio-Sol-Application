@@ -1,0 +1,15 @@
+h1 {
+  background: var(--color-gradient);
+  font-size: 24px;
+  margin: auto;
+  text-align: center;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: var(--color-secondary);
+  width: 205px;
+  margin: 10px auto;
+}
